@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#006c18</color>
+    <color name="colorPrimaryDark">#005613</color>
+    <color name="colorBackground">#dadada</color>
+    <color name="colorAccent">#005613</color>
+    <color name="colorItem">#ffffff</color>
+    <color name="colorTrans">#AA000000</color>
+
+    <color name="outside_color_trans">#00000000</color>
+    <color name="outside_color_gray">#66444444</color>
+    <color name="outside_color_dark_gray">#66303030</color>
+    <color name="outside_color_pink">#66E7b8f1</color>
+
+</resources>

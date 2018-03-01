@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:background="@color/colorPrimary">
+
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_save"
+        android:textColor="@color/colorItem"
+        android:background="@color/colorPrimary"
+        app:showAsAction="always" />
+
+    <group
+        android:id="@+id/selection"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/action_selection_search"
+            android:orderInCategory="100"
+            android:textColor="@color/colorItem"
+            android:background="@color/colorPrimary"
+            android:title="@string/search"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_selection_all"
+            android:orderInCategory="100"
+            android:textColor="@color/colorItem"
+            android:background="@color/colorPrimary"
+            android:title="@string/action_selection_all"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_selection_done"
+            android:orderInCategory="100"
+            android:textColor="@color/colorItem"
+            android:background="@color/colorPrimary"
+            android:title="@string/action_selection_done"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_selection_not_done"
+            android:orderInCategory="100"
+            android:textColor="@color/colorItem"
+            android:background="@color/colorPrimary"
+            android:title="@string/action_selection_not_done"
+            app:showAsAction="never" />
+
+    </group>
+
+
+</menu>

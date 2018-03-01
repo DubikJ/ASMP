@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">Smart Farm : Pig</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="action_sync">Обмен данными</string>
+    <string name="action_setting">Настройки</string>
+    <string name="action_exit">Выход</string>
+    <string name="action_selection">Выбор</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_selection_all">Все</string>
+    <string name="action_selection_done">Выполненые</string>
+    <string name="action_selection_not_done">Не выполненые</string>
+
+    <string name="search">Поиск</string>
+    <string name="old_data">Устаревшие данные</string>
+    <string name="need_sync">Необходимо выполнить обмен из сервером</string>
+
+    <string name="password">Пароль</string>
+    <string name="login">Логин</string>
+    <string name="server">Сервер</string>
+
+    <string name="log_error_name">Отчет об ошибке</string>
+
+    <!--Basic_Activity-->
+    <string name="double_press_exit">Пожалуйста, нажмите еще раз НАЗАД, чтоб закрыть приложение</string>
+    <string name="task_list">"Список заданий на: "</string>
+
+    <!--AlertDialog-->
+    <string name="questions_exit_clear">При выходе будут очищены все данные!
+        Вы уверены, что хотите выйти?</string>
+    <string name="questions_exit">Вы уверены, что хотите выйти?</string>
+    <string name="questions_select_element">Выбрать елемент?</string>
+    <string name="questions_data_save">Сохранить данные в базу?</string>
+    <string name="questions_rewrite_photo">Перезаписать фото?</string>
+    <string name="questions_title_info">Инфо</string>
+    <string name="questions_answer_yes">Да</string>
+    <string name="questions_answer_save">Сохранить</string>
+    <string name="questions_answer_no">Нет</string>
+    <string name="questions_answer_cancel">Отменить</string>
+    <string name="questions_answer_ok">Ок</string>
+    <string name="welcome">"Добро пожаловать!"</string>
+    <string name="element_is_added">"Елемент уже добавлен!"</string>
+    <string name="questions_animal_not_added">Животное не внесено в базу. Внести в базу?</string>
+    <string name="animal_not_added">Животное не внесено в базу</string>
+
+    <!-- Synchronization-->
+    <string name="exchange">Обмен</string>
+    <string name="sync_start">Pапущена синхронизация...</string>
+    <string name="questions_Sync">Скачать данные с сервера?</string>
+    <string name="syncing">Выполняется синхронизация с сервером.</string>
+    <string name="sync_success">Синхронизация успешная.</string>
+    <string name="sync_error">Ошибка синхронизации.</string>
+    <string name="sync_cancel">Отменено синхронизацию.</string>
+    <string name="sync_timeout">Закончилось время синхронизации.</string>
+    <string name="auth_error">Неверные логин или пароль.</string>
+    <string name="error_connection_server">Соединение с сервером не установлено! Возможно адрес сервера заполнен некорректно.</string>
+    <string name="error_data_not_found">Данные не найдено!</string>
+    <string name="error_no_data">Отсутствуют данные! Нужно загрузить данные с сервера!</string>
+    <string name="error_data_server">Ошибка обработки данных на сервере!</string>
+    <string name="error_retrieving_data">Ошибка получения данных!</string>
+    <string name="error_internet_connecting">Отсутствует соединение с интернетом!</string>
+    <string name="error_no_data_sync">На серевере не найдено задач!</string>
+    <string name="scan">Сканирование...</string>
+    <string name="questions_start_scan">Сканировать животных ?</string>
+    <string name="questions_cancel_scan">Отменить сканирование ?</string>
+    <string name="download_data">Загрузка данных...</string>
+    <string name="download">Загрузка</string>
+    <string name="questions_cancel_download_data">Отменить загрузку данных ?</string>
+    <string name="select_from_the_list">Выберите из списка</string>
+    <string name="select">Выберите</string>
+    <string name="error_access_denied">Устройству запрещен доступ на получение данных</string>
+    <string name="error_access_denied_wait">Устройство не активировано. Отправлен запрос активации на сервер, поробуйте синхронизироваться позже</string>
+    <string name="serialport_init_fail">Не найдено устройство сканирования</string>
+
+    <!-- Scan-->
+    <string name="using_scan_mode">Использовать устр-во сканирования</string>
+
+    <!-- Settings-->
+    <string name="using_ext_storage">Использовать внешнее хранилище</string>
+
+    <!-- Pull To Refresh View-->
+    <string name="pull_to_refresh_pull_label">Потяните, чтобы загрузить...</string>
+    <string name="pull_to_refresh_release_label">Отпустите, чтобы загрузить ...</string>
+    <string name="pull_to_refresh_refreshing_label">Загрузка данных...</string>
+    <string name="pull_to_refresh_tap_label">Нажмите, чтобы загрузить ...</string>
+
+    <!-- Services-->
+    <string name="service_amout_plane">План:</string>
+    <string name="service_amout_done">Выполн.:</string>
+
+    <!-- Animal-->
+    <string name="animal_number">Номер</string>
+    <string name="animal_group">Группа</string>
+    <string name="name_short">Наим-ние</string>
+    <string name="animal_name_name">Животное</string>
+
+    <!--Service_Activity-->
+    <string name="task_not_found">Не найдена задача!</string>
+    <string name="task_title">"Задача: "</string>
+
+    <!--Service_Item_Activity-->
+    <string name="service_item_number_symbol">№: </string>
+    <string name="service_item_grope">Группа: </string>
+    <string name="service_item_done">Выполнено</string>
+    <string name="service_item_not_done">Не выполнено</string>
+    <string name="service_item_rfid_name">RFID: </string>
+    <string name="service_item_note_name">Примечание</string>
+    <string name="service_item_housing">Размещение</string>
+    <string name="service_item_number">Количество</string>
+    <string name="service_item_live">Живых</string>
+    <string name="service_item_normal">Здоровых</string>
+    <string name="service_item_weak">Больных</string>
+    <string name="service_item_death">Мертвых</string>
+    <string name="service_item_mummy">Мумиф.</string>
+    <string name="service_item_from_group">Из группы</string>
+    <string name="service_item_to_group">Группа животных</string>
+    <string name="service_item_to_tecnical_group">Технолог. группа</string>
+    <string name="service_item_from_corp">Из корпуса</string>
+    <string name="service_item_to_corp">В корпус</string>
+    <string name="service_item_from_sector">Из сектора</string>
+    <string name="service_item_to_sector">В сектор</string>
+    <string name="service_item_from_cell">Из клетки</string>
+    <string name="service_item_to_cell">В клетку</string>
+    <string name="service_item_weight">Вес</string>
+    <string name="service_item_adm_number">Номер прихода</string>
+    <string name="service_item_result_service">Выполнить задачу</string>
+    <string name="service_item_status_animal">Состояние жив-ных</string>
+    <string name="service_item_type_dispos_anim">Причина выбытия</string>
+    <string name="service_item_lenght">Длина туловища</string>
+    <string name="service_item_bread_trikness">Толщина шпига</string>
+    <string name="service_item_depth_mysz">Глубина мышцы</string>
+    <string name="service_item_exterior">Экстерьер</string>
+    <string name="service_item_new_number">Новый номер</string>
+    <string name="enter_world_search">Введите слово для поиска</string>
+    <string name="service_item_vet_exercise">Вет мероприятие</string>
+    <string name="service_item_vet_preparat">Вет пррепараты</string>
+    <string name="service_item_artificial_insemination">Искуственное осеменение</string>
+    <string name="service_add">Добавить</string>
+
+    <!-- Animals_Groupe_Activity-->
+    <string name="groupe_animals_name">Виды животных</string>
+    <string name="animals_list_name">Список животных</string>
+    <string name="groupe_animals_sow">Свиноматки</string>
+    <string name="groupe_animals_boar">Хряки</string>
+    <string name="groupe_animals_weaning">Отлучка</string>
+    <string name="groupe_animals_cultivation">Доращивание</string>
+    <string name="groupe_animals_fatenting">Откорм</string>
+
+    <!-- Animals_Activity-->
+    <string name="type_animal_not_found">Не найден тип животных!</string>
+
+    <!-- Animal_Activity-->
+    <string name="animal_card_name">Карточка</string>
+    <string name="animal_card_cycles_farrowing">Циклы опороса</string>
+    <string name="animal_history_name">История</string>
+    <string name="animal_not_found">Не найдено животное</string>
+    <string name="animal_number_symbol">№</string>
+    <string name="animal_add_number_symbol">№ доп</string>
+    <string name="animal_name">Кличка</string>
+    <string name="animal_date_receipt">Дата приема</string>
+    <string name="animal_status">Состояние</string>
+    <string name="animal_corp">Корпус</string>
+    <string name="animal_sector">Сектор</string>
+    <string name="animal_cell">Клетка</string>
+    <string name="animal_no_rfid">Регистрация без кода RFID!</string>
+    <string name="animal_no_type_animal">Не найдены типы животных</string>
+    <string name="select_what_you_create">Вы регистрируете ?</string>
+    <string name="animal_group_name">Наименование</string>
+    <string name="animal_group_number">Кол-во животных</string>
+    <string name="animal_group_number_short">Кол-во</string>
+    <string name="error_field_required">Эти данные есть обязательными</string>
+    <string name="photo_not_found">Фото не найдено</string>
+    <string name="animal_registration">Регистрация: </string>
+    <string name="group_animal_sow">Свиноматка</string>
+    <string name="group_animals_sow">Группа свиноматок</string>
+    <string name="group_animal_boar">Хряк</string>
+    <string name="group_animal_boar1">Хряк 1</string>
+    <string name="group_animal_boar2">Хряк 2</string>
+    <string name="group_animal_boar3">Хряк 3</string>
+    <string name="group_animals_boar">Группа хряков</string>
+    <string name="group_animal_weaning">Отлучка</string>
+    <string name="group_animals_weaning">Группа отлучка</string>
+    <string name="group_animal_cultivation">Доращивание</string>
+    <string name="group_animals_cultivation">Группа доращивание</string>
+    <string name="group_animal_fatenting">Откорм</string>
+    <string name="group_animals_fatenting">Группа откорм</string>
+    <string name="animal_no_task_list">"Список заданий на сегодня"</string>
+    <string name="animal_sow_new">Принята</string>
+    <string name="animal_breed">Порода</string>
+    <string name="animal_herd">Стадо</string>
+    <string name="animal_no_registered">Животное не зарегистрировано</string>
+
+    <!-- Housing_Activity-->
+    <string name="type_housing_not_found">Не найден тип размещения!</string>
+    <string name="housing_corp">Корпус</string>
+    <string name="housing_sector">Сектор</string>
+    <string name="housing_cell">Клетка</string>
+
+    <!-- Groupe_Activity-->
+    <string name="select_from_the_list_groupe">Выберите из списка группу</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+</resources>

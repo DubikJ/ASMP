@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorBackground"
+                tools:context="activity.AnimalsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <ProgressBar
+            android:id="@+id/animals_progress_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminateOnly="true"
+            android:layout_gravity="top"
+            android:layout_below="@id/toolbar"
+            android:visibility="gone"
+            android:progressDrawable="@drawable/progress_bar_horizontal" />
+
+    <ListView
+        android:id="@+id/list_animals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.124"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_below="@id/animals_progress_bar"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/animal_up_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:layout_marginLeft="@dimen/activity_margin_middle"
+        android:layout_marginRight="@dimen/activity_fab_right_margin"
+        android:layout_marginTop="@dimen/activity_animals_fab_margin_top"
+        android:layout_marginEnd="@dimen/activity_fab_right_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/list_animals"
+        android:background="@drawable/fab_add_service"
+        app:layout_anchor="@id/list_animals"
+        app:layout_anchorGravity="top|right|end">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/animal_up"
+            android:layout_width="@dimen/fab_size_middle"
+            android:layout_height="@dimen/fab_size_middle"
+            android:layout_gravity="center_vertical"
+            android:elevation="0dp"
+            android:src="@drawable/ic_up_arrow"
+            android:transitionName="bg"
+            app:fabSize="auto"
+            app:elevation="0dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/animal_scan_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:layout_marginLeft="@dimen/activity_margin_middle"
+        android:layout_marginRight="@dimen/activity_fab_right_margin"
+        android:layout_marginBottom="@dimen/activity_animals_fab_margin_bottom"
+        android:layout_marginEnd="@dimen/activity_fab_right_margin"
+        android:background="@drawable/fab_add_service"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/list_animals"
+        app:layout_anchor="@id/list_animals"
+        app:layout_anchorGravity="bottom|right|end">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/animal_scan"
+            android:layout_width="@dimen/fab_size_middle"
+            android:layout_height="@dimen/fab_size_middle"
+            android:layout_gravity="center_vertical"
+            android:elevation="0dp"
+            android:src="@drawable/ic_find_animal"
+            android:transitionName="bg"
+            app:fabSize="auto"
+            app:elevation="0dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

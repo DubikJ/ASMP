@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:background="@color/colorPrimary">
+
+    <item
+        android:id="@+id/action_open_structure"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_farm_structure"
+        android:textColor="@color/colorItem"
+        android:background="@color/colorPrimary"
+        android:title="@string/action_setting"
+        app:showAsAction="always" />
+</menu>

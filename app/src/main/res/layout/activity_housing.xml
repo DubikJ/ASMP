@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorBackground"
+                tools:context="activity.AnimalsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+
+    <ListView
+        android:id="@+id/list_housing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_below="@id/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/housing_up_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:layout_marginLeft="@dimen/activity_margin_middle"
+        android:layout_marginRight="@dimen/activity_fab_right_margin"
+        android:layout_marginTop="@dimen/activity_animals_fab_margin_top"
+        android:layout_marginEnd="@dimen/activity_fab_right_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/list_housing"
+        android:background="@drawable/fab_add_service"
+        app:layout_anchor="@id/list_housing"
+        app:layout_anchorGravity="top|right|end">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/housing_up"
+            android:layout_width="@dimen/fab_size_middle"
+            android:layout_height="@dimen/fab_size_middle"
+            android:layout_gravity="center_vertical"
+            android:elevation="0dp"
+            android:src="@drawable/ic_up_arrow"
+            app:fabSize="auto"
+            app:elevation="0dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

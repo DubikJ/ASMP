@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.avatlantik.asmp.activity.ServiceActivity"
+    android:background="@color/colorBackground">
+
+
+    <ListView
+        android:id="@+id/list_service_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/animals_list_margin"
+        android:layout_marginBottom="@dimen/animals_list_margin"
+        android:layout_marginLeft="@dimen/services_margin_list"
+        android:layout_marginRight="@dimen/services_margin_list"
+        android:layout_weight="0.2"
+        android:divider="@null"
+        android:dividerHeight="10dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/service_animal_group_processing_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:layout_marginLeft="@dimen/activity_margin_middle"
+        android:layout_marginRight="@dimen/activity_fab_right_margin"
+        android:layout_marginBottom="@dimen/activity_animals_fab_margin_bottom_x2"
+        android:layout_marginEnd="@dimen/activity_fab_right_margin"
+        android:background="@drawable/fab_add_service"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/list_service_line"
+        app:layout_anchor="@id/list_service"
+        app:layout_anchorGravity="bottom|right|end">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/service_animal_group_processing"
+            android:layout_width="@dimen/fab_size_middle"
+            android:layout_height="@dimen/fab_size_middle"
+            android:layout_gravity="center_vertical"
+            android:elevation="0dp"
+            android:src="@drawable/ic_list_animal"
+            android:transitionName="bg"
+            app:fabSize="auto"
+            app:elevation="0dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/service_animal_add_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:layout_marginLeft="@dimen/activity_margin_middle"
+        android:layout_marginRight="@dimen/activity_fab_right_margin"
+        android:layout_marginBottom="@dimen/activity_animals_fab_margin_bottom"
+        android:layout_marginEnd="@dimen/activity_fab_right_margin"
+        android:background="@drawable/fab_add_service"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/list_service_line"
+        app:layout_anchor="@id/list_service"
+        app:layout_anchorGravity="bottom|right|end">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/service_animal_add"
+            android:layout_width="@dimen/fab_size_middle"
+            android:layout_height="@dimen/fab_size_middle"
+            android:layout_gravity="center_vertical"
+            android:elevation="0dp"
+            android:src="@drawable/ic_add_animal"
+            android:transitionName="bg"
+            app:fabSize="auto"
+            app:elevation="0dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

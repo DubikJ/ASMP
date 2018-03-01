@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:elevation="4dp"
+             android:background="?attr/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/search_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:theme="@style/TextInputWhite">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/animals_margin_list"
+                android:drawableRight="@android:drawable/ic_menu_close_clear_cancel"
+                android:drawablePadding="30dp"
+                android:hint="@string/search"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_standart"
+                android:textColor="@color/colorItem"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+</FrameLayout>

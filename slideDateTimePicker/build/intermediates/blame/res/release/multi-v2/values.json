@@ -1,0 +1,86 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Android\\Android Project\\ASMP\\slideDateTimePicker\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Android\\Android Project\\ASMP\\slideDateTimePicker\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "61,124",
+                        "endColumns": "61,62",
+                        "endOffsets": "118,182"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,117",
+                        "endColumns": "61,62",
+                        "endOffsets": "112,175"
+                    }
+                },
+                {
+                    "source": "D:\\Android\\Android Project\\ASMP\\slideDateTimePicker\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "192,525",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "484,682"
+                    },
+                    "to": {
+                        "startLines": "4,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "180,471",
+                        "endLines": "10,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "466,626"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Android\\Android Project\\ASMP\\slideDateTimePicker\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Android\\Android Project\\ASMP\\slideDateTimePicker\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "61,124",
+                        "endColumns": "61,62",
+                        "endOffsets": "118,182"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,117",
+                        "endColumns": "61,62",
+                        "endOffsets": "112,175"
+                    }
+                },
+                {
+                    "source": "D:\\Android\\Android Project\\ASMP\\slideDateTimePicker\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "192,525",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "484,682"
+                    },
+                    "to": {
+                        "startLines": "4,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "180,471",
+                        "endLines": "10,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "466,626"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Boot activity-->
+    <dimen name="margin_ctext_layout">10dp</dimen>
+
+    <!--Floating action button-->
+    <dimen name="fab_size_middle">70dp</dimen>
+    <dimen name="design_fab_size_normal">90dp</dimen>
+    <dimen name="design_fab_size_mini">30dp</dimen>
+    <dimen name="design_fab_image_size" tools:override="true">80dp</dimen>
+    <dimen name="fab_basic_margin_middle">30dp</dimen>
+
+    <dimen name="text_size_standart">25dp</dimen>
+
+    <!--Basic activity-->
+    <dimen name="basic_margin_cap">10dp</dimen>
+    <dimen name="basic_text_size_cap">30dp</dimen>
+    <dimen name="basic_margin_list">5dp</dimen>
+    <dimen name="basic_progress_bar_size">70dp</dimen>
+    <dimen name="basic_service_item_small_text_size">17dp</dimen>
+    <dimen name="basic_margin_end_fab_add_service">45dp</dimen>
+
+    <!--Services activity-->
+    <dimen name="services_margin_list">5dp</dimen>
+
+    <!--Animals groupe activity-->
+    <dimen name="animals_groupe_text_size">28dp</dimen>
+    <dimen name="animals_groupe_image_size">150dp</dimen>
+
+    <!--Animals activity-->
+    <dimen name="animals_margin_list">5dp</dimen>
+    <dimen name="animals_text_input_bottom">10dp</dimen>
+    <dimen name="activity_margin_middle">16dp</dimen>
+    <dimen name="activity_fab_right_margin">20dp</dimen>
+    <dimen name="activity_animals_fab_margin_bottom">120dp</dimen>
+    <dimen name="activity_animals_fab_margin_top">220dp</dimen>
+    <dimen name="activity_animals_fab_margin_bottom_x2">220dp</dimen>
+    <dimen name="activity_animals_fab_margin_bottom_x3">390dp</dimen>
+
+    <!--Message activity-->
+    <dimen name="message_activity_text_title">30dp</dimen>
+    <dimen name="message_activity_text_message">20dp</dimen>
+    <dimen name="message_activity_text_button">20dp</dimen>
+    <dimen name="message_activity_margin">2dp</dimen>
+
+    <!--Setting activity-->
+    <dimen name="setting_marging_layout">10dp</dimen>
+
+    <!--Animal activity-->
+    <dimen name="animal_detail_backdrop_height">400dp</dimen>
+    <dimen name="animal_detail_card_margin">5dp</dimen>
+    <dimen name="animal_detail_card_margin_bottom">10dp</dimen>
+    <dimen name="animal_detail_fab_margin">16dp</dimen>
+    <dimen name="list_item_avatar_size">60dp</dimen>
+
+</resources>

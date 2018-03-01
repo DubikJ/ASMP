@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.avatlantik.asmp">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.usb.host" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+
+    <application
+        android:name=".app.ASMPApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_animal"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_animal"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name=".repository.DataContentProvider"
+            android:authorities="com.avatlantik.asmp.dbProvider"
+            android:exported="false" />
+
+        <service
+            android:name=".service.sync.SyncIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.BootAct"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.BasicActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ServiceActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.AnimalsActivity"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar"/>
+
+        <activity
+            android:name=".activity.AnimalActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar"/>
+
+        <activity
+            android:name=".activity.NewAnimalActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar"/>
+
+        <activity
+            android:name=".activity.SettingActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.AnimalsGroupeActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ScanActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ImageActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.HousingActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar"/>
+
+        <activity
+            android:name=".activity.TecnikalGroupeAnimalActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar"/>
+
+        <activity
+            android:name=".activity.GroupeAnimalActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar"/>
+
+        <activity
+            android:name=".activity.ServiceGroupProcessingActivity"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar"/>
+
+        <activity
+            android:name=".logs.ReportActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/log_error_name"
+            android:noHistory="true"
+            android:process=":report_process"
+            android:theme="@android:style/Theme.NoDisplay"/>
+
+        <provider
+            android:name=".logs.ReportFilesProvider"
+            android:process=":report_process"
+            android:authorities="com.avatlantik.asmp.filesprovider"
+            android:exported="true"
+            tools:ignore="ExportedContentProvider"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#AA000000"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/services_margin_list"
+        android:layout_marginRight="@dimen/services_margin_list"
+        android:layout_margin="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_line_up"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_line_up"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="7dp">
+
+                    <LinearLayout
+                        android:id="@+id/list_service_done_name_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/list_service_done_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/menu_icon"/>
+
+                        <TextView
+                            android:id="@+id/list_service_done_name"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/colorItem"
+                            android:textSize="@dimen/basic_text_size_cap"/>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/list_service_done_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="2dp"
+                        app:srcCompat="@drawable/ic_more_horiz_white"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/list_service_done_cap_group_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/list_service_done_group_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1.5dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/list_service_done_group_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:text="@string/service_item_grope"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/text_size_standart"/>
+
+                                <TextView
+                                    android:id="@+id/list_service_done_group"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/text_size_standart"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="fill_vertical"
+                        android:layout_margin="1.5dp"
+                        android:layout_weight="1.8"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/list_service_done_isresult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/service_item_done"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/text_size_standart"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_service_done_body_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorItem"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/list_service_done_rfid_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.4"
+                        android:text="@string/service_item_rfid_name"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/basic_service_item_small_text_size"/>
+
+                    <TextView
+                        android:id="@+id/list_service_done_rfid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/basic_service_item_small_text_size"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/list_service_done_housing_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.4"
+                        android:text="@string/service_item_housing"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_standart"/>
+
+                    <TextView
+                        android:id="@+id/list_service_done_housing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_standart"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorItem">
+
+                        <com.avatlantik.asmp.ui.widget.DrawableEditText
+                            android:id="@+id/list_service_done_to_corp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:drawableRightCompat="@drawable/ic_more_horiz"
+                            android:focusable="false"
+                            android:hint="@string/service_item_to_corp"
+                            android:maxLines="1"
+                            android:textSize="@dimen/text_size_standart"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorItem">
+
+                        <com.avatlantik.asmp.ui.widget.DrawableEditText
+                            android:id="@+id/list_service_done_to_sector"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:drawableRightCompat="@drawable/ic_more_horiz"
+                            android:focusable="false"
+                            android:hint="@string/service_item_to_sector"
+                            android:maxLines="1"
+                            android:textSize="@dimen/text_size_standart"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorItem">
+
+                        <com.avatlantik.asmp.ui.widget.DrawableEditText
+                            android:id="@+id/list_service_done_to_cell"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:drawableRightCompat="@drawable/ic_more_horiz"
+                            android:focusable="false"
+                            android:hint="@string/service_item_to_cell"
+                            android:maxLines="1"
+                            android:textSize="@dimen/text_size_standart"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorItem">
+
+                        <EditText
+                            android:id="@+id/list_service_done_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/animal_group_number"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textSize="@dimen/text_size_standart"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorItem">
+
+                        <EditText
+                            android:id="@+id/list_service_done_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/service_item_weight"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:textSize="@dimen/text_size_standart"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@color/colorItem">
+
+                    <EditText
+                        android:id="@+id/list_service_done_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/service_item_note_name"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_standart"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:elevation="4dp"
+             android:background="?attr/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@color/colorBackground">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/list_service_done_to_group_til"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorItem">
+
+                <com.avatlantik.asmp.ui.widget.DrawableEditText
+                    android:id="@+id/list_service_done_to_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/service_item_to_group"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_standart"
+                    android:textColor="@color/colorAccent"
+                    app:drawableRightCompat="@drawable/ic_more_horiz"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/list_service_done_to_group_tecnical_til"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorItem">
+
+                <com.avatlantik.asmp.ui.widget.DrawableEditText
+                    android:id="@+id/list_service_done_to_group_tecnical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/service_item_to_tecnical_group"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_standart"
+                    android:textColor="@color/colorAccent"
+                    app:drawableRightCompat="@drawable/ic_more_horiz"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/list_service_done_to_corp_til"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorItem">
+
+                <com.avatlantik.asmp.ui.widget.DrawableEditText
+                    android:id="@+id/list_service_done_to_corp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="@string/service_item_to_corp"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_standart"
+                    app:drawableRightCompat="@drawable/ic_more_horiz"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/list_service_done_to_sector_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorItem">
+
+                    <com.avatlantik.asmp.ui.widget.DrawableEditText
+                        android:id="@+id/list_service_done_to_sector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:hint="@string/service_item_to_sector"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_standart"
+                        app:drawableRightCompat="@drawable/ic_more_horiz"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorItem">
+
+                    <com.avatlantik.asmp.ui.widget.DrawableEditText
+                        android:id="@+id/list_service_done_to_cell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:hint="@string/service_item_to_cell"
+                        android:maxLines="1"
+                        android:textSize="@dimen/text_size_standart"
+                        app:drawableRightCompat="@drawable/ic_more_horiz"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/list_service_done_adm_num_til"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorItem">
+
+                <com.avatlantik.asmp.ui.widget.DrawableEditText
+                    android:id="@+id/list_service_done_adm_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/service_item_adm_number"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_standart"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/list_service_done_type_dispos_anim_til"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorItem">
+
+                <com.avatlantik.asmp.ui.widget.DrawableEditText
+                    android:id="@+id/list_service_done_type_dispos_anim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/service_item_type_dispos_anim"
+                    android:focusable="false"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_size_standart"
+                    app:drawableRightCompat="@drawable/ic_more_horiz"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

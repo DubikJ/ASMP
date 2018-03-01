@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/bg"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="@color/colorBackground"
+                                                 android:visibility="invisible"
+                                                 tools:context=".activity.ScanActivity">
+
+        <LinearLayout
+            android:id="@+id/scan_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/scan_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/scan"
+                android:textSize="@dimen/basic_text_size_cap"
+                android:textColor="@color/colorItem"/>
+
+            <LinearLayout
+                android:id="@+id/image_scan"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/logo_app">
+
+                <View
+                    android:id="@+id/bar_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/colorItem"
+                    android:src="@drawable/logo_app"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scan_listanimal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ListView
+                    android:id="@+id/scan_animal_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.124"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:layout_below="@id/animals_progress_bar"/>
+
+
+                <LinearLayout
+                    android:id="@+id/animal_scan_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:layout_marginLeft="@dimen/activity_margin_middle"
+                    android:layout_marginRight="@dimen/activity_fab_right_margin"
+                    android:layout_marginBottom="@dimen/activity_animals_fab_margin_bottom"
+                    android:layout_marginEnd="@dimen/activity_fab_right_margin"
+                    android:background="@drawable/fab_add_service"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/scan_animal_list"
+                    app:layout_anchor="@id/list_animals"
+                    app:layout_anchorGravity="bottom|right|end">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/stop_start_scan"
+                        android:layout_width="@dimen/fab_size_middle"
+                        android:layout_height="@dimen/fab_size_middle"
+                        android:layout_gravity="center_vertical"
+                        android:elevation="0dp"
+                        android:src="@drawable/ic_close"
+                        android:transitionName="bg"
+                        app:fabSize="auto"
+                        app:elevation="0dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/next_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="20dp"
+        android:transitionName="bg"
+        app:srcCompat="@drawable/ic_find_animal" />
+
+</android.support.design.widget.CoordinatorLayout>
